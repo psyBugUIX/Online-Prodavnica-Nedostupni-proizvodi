@@ -1,7 +1,16 @@
+class Artikal {
+    constructor(br, naziv, cena, dostupan) {
+        this.br = br;
+        this.naziv = naziv;
+        this.cena = cena;
+        this.dostupan = dostupan;
+    }
+}
+
 const artikli = [
-    { br: 1, naziv: "Monitor", cena: 165, dostupan: "DA" },
-    { br: 2, naziv: "TV", cena: 650, dostupan: "NE" },
-    { br: 3, naziv: "Miš", cena: 20, dostupan: "DA" }
+    new Artikal(1, "Monitor", 165, "DA"),
+    new Artikal(2, "TV", 650, "NE"),
+    new Artikal(3, "Miš", 20, "DA")
 ];
 
 function popuniTabelu() {
@@ -16,7 +25,6 @@ function popuniTabelu() {
         red.insertCell(2).textContent = artikal.cena;
         red.insertCell(3).textContent = artikal.dostupan;
 
-        
         if (artikal.dostupan === "NE") {
             red.className = "nedostupno-red";
         }
