@@ -29,6 +29,8 @@ th {
     font-weight: normal;
 }
 
+
+
 th:nth-child(1), td:nth-child(1) {
      width: 20px; text-align: center; 
 }

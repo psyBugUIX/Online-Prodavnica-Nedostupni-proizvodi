@@ -1,3 +1,5 @@
+'use strict'; 
+
 class Artikal {
     constructor(br, naziv, cena, dostupan) {
         this.br = br;
@@ -10,7 +12,9 @@ class Artikal {
 const artikli = [
     new Artikal(1, "Monitor", 165, "DA"),
     new Artikal(2, "TV", 650, "NE"),
-    new Artikal(3, "Miš", 20, "DA")
+    new Artikal(3, "Miš", 20, "DA"),
+    new Artikal(4, "Tastatura", 45, "NE"),
+    new Artikal(5, "Laptop", 1200, "DA")
 ];
 
 function popuniTabelu() {
